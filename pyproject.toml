@@ -1,0 +1,29 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "pyfinance"
+version = "0.1.0"
+description = "High-performance financial calculations library with Rust backend"
+authors = [
+    {name = "Fulong Tan"}
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.maturin]
+# Path to the Rust crate with PyO3 bindings
+manifest-path = "rust/crates/pyfinance/Cargo.toml"
+# Python source directory
+python-source = "python"
+module-name = "pyfinance"

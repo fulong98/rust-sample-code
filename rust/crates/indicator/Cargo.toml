@@ -1,0 +1,14 @@
+[package]
+name = "indicator"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Technical analysis indicators library for financial markets"
+
+[lib]
+name = "indicator"
+path = "src/lib.rs"
+
+[dependencies]
+thiserror.workspace = true

@@ -1,0 +1,16 @@
+[package]
+name = "pyfinance"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Python bindings for pricing and indicator libraries"
+
+[lib]
+name = "pyfinance"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22", features = ["extension-module"] }
+pricing = { path = "../pricing" }
+indicator = { path = "../indicator" }

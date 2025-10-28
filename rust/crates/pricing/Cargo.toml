@@ -1,0 +1,15 @@
+[package]
+name = "pricing"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Financial options pricing library with Black-Scholes model"
+
+[lib]
+name = "pricing"
+path = "src/lib.rs"
+
+[dependencies]
+thiserror.workspace = true
+statrs = "0.17"

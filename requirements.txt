@@ -1,0 +1,4 @@
+# Python dependencies for development
+
+# Build tool for PyO3 projects
+maturin>=1.0,<2.0
